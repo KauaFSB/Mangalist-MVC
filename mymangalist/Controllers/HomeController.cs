@@ -1,4 +1,6 @@
 using System.Diagnostics;
+using System.Linq.Expressions;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Mymangalist.Models;
 
@@ -15,7 +17,12 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        List<Manga> mangas = [];
+        using (StreamReader leitor = new ("Data\\mangas.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            mangas = JsonSerializer.Deserialize<List<Manga>>(dados);
+        }
     }
 
     public IActionResult Privacy()

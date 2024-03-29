@@ -4,7 +4,7 @@
         "Nome": "Berserk",
         "Descricao": "Berserk narra a saga de Guts, um guerreiro amaldiçoado conhecido como o Espadachim Negro. Em um mundo medieval assolado por guerras, monstros e entidades demoníacas, Guts carrega consigo uma enorme espada, a Dragonslayer, e uma marca em seu pescoço, o Marca do Sacrifício, que o atrai para as forças do mal.",
         "Genero": [ "Horror", "Medieval", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\01.png"
+        "Imagem": "\\img\\mangas\\01.jpeg"
       },
     
       {
@@ -12,7 +12,7 @@
         "Nome": "JoJo Part 7: Steel Ball Run",
         "Descricao": "Steel Ball Run se distancia da continuidade linear das partes anteriores de JoJo's Bizarre Adventure, apresentando um universo alternativo. A trama gira em torno da Steel Ball Run, uma corrida de cavalos cross-continental com um prêmio milionário.",
         "Genero": [ "Aventura", "Supernatural", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\02.png"
+        "Imagem": "\\img\\mangas\\02.jpeg"
       },
     
       {
@@ -20,7 +20,7 @@
         "Nome": "Vagabond",
         "Descricao": "Vagabond acompanha a história de Takezo Shinmen, um jovem espadachim talentoso, mas violento e impulsivo. Após a morte de seu senhor na Batalha de Sekigahara, Takezo vaga pelo Japão em busca de um propósito na vida. Durante sua jornada, ele se envolve em diversos duelos e confrontos, aprendendo sobre o caminho do samurai e buscando a perfeição na arte da espada.",
         "Genero": [ "Aventura", "Drama", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\03.png"
+        "Imagem": "\\img\\mangas\\03.jpeg"
       },
     
       {
@@ -28,7 +28,7 @@
         "Nome": "One Piece",
         "Descricao": "One Piece é uma série de mangá shounen de longa duração criada por Eiichiro Oda. Segue as aventuras de Monkey D. Luffy, um jovem que ganha os poderes elásticos da borracha após consumir acidentalmente uma Akuma no Mi. Luffy sonha em se tornar o Rei dos Piratas e, para conseguir isso, ele navega pelos vastos mares com sua tripulação desajustada, os Piratas do Chapéu de Palha.",
         "Genero": [ "Aventura", "Comédia", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\04.png"
+        "Imagem": "\\img\\mangas\\04.jpeg"
       },
     
       {
@@ -36,7 +36,7 @@
         "Nome": "Monster",
         "Descricao": "Monster acompanha a história de Kenzo Tenma, um neurocirurgião japonês que vive na Alemanha. Sua vida vira de cabeça para baixo quando ele decide salvar a vida de um menino chamado Johan Liebert, em vez de um político importante. Anos depois, Tenma descobre que Johan se tornou um serial killer psicopata e decide persegui-lo para detê-lo e reparar seu erro.",
         "Genero": [ "Suspense", "Psicológico", "Mistério" ] ,
-        "Imagem": "\\img\\mangas\\05.png"
+        "Imagem": "\\img\\mangas\\05.jpeg"
       },
     
       {
@@ -44,7 +44,7 @@
         "Nome": "Slam Dunk",
         "Descricao": "Slam Dunk é um clássico mangá de esporte, criado por Takehiko Inoue, que narra a história de Hanamichi Sakuragi, um delinquente encrenqueiro que ingressa no time de basquete do ensino médio Shohoku. Inicialmente, seus motivos são bem superficiais: impressionar uma garota que gosta do esporte. Mas, aos poucos, Hanamichi se vê envolvido pela paixão do basquete e o sonho de alcançar o campeonato nacional.",
         "Genero": [ "Esporte", "Comédia", "Drama" ] ,
-        "Imagem": "\\img\\mangas\\06.png"
+        "Imagem": "\\img\\mangas\\06.jpeg"
       },
     
       {
@@ -52,7 +52,7 @@
         "Nome": "Vinland Saga",
         "Descricao": "Vinland Saga é um mangá seinen histórico escrito e ilustrado por Makoto Yukimura. A história se passa no início do século XI, na Europa, durante a era viking. O protagonista, Thorfinn, é filho de Thors, um lendário guerreiro viking. Quando criança, Thorfinn presencia o assassinato de seu pai por Askeladd, um líder viking implacável. Motivado pela vingança, Thorfinn se junta ao bando de Askeladd e se torna um guerreiro habilidoso e brutal. Ao longo da história, Thorfinn acompanha Askeladd em suas conquistas e batalhas, testemunhando a crueldade e a violência da era viking. Ele também conhece diversos personagens interessantes, como Canute, o futuro rei da Dinamarca, e Einar, um jovem escravo que se torna seu amigo.",
         "Genero": [ "Drama", "Aventura", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\07.png"
+        "Imagem": "\\img\\mangas\\07.jpeg"
       },
     
       {
@@ -60,7 +60,7 @@
         "Nome": "Fullmetal Alchemist",
         "Descricao": "Fullmetal Alchemist é um mangá seinen escrito e ilustrado por Hiromu Arakawa. A história se passa em um mundo de fantasia com tecnologia steampunk e acompanha os irmãos Edward e Alphonse Elric em sua busca pela pedra filosofal.",
         "Genero": [ "Aventura", "Drama", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\08.png"
+        "Imagem": "\\img\\mangas\\08.jpeg"
       },
     
       {
@@ -68,7 +68,7 @@
         "Nome": "Grand Blue",
         "Descricao": "Iori Kitahara, um jovem estudante recém-chegado à faculdade, sonha com uma vida universitária cheia de independência, belas garotas e novas experiências. Ele se muda para morar com seu tio, dono da loja de mergulho Grand Blue. Mas seus planos mudam completamente quando conhece o clube de mergulho da faculdade.",
         "Genero": [ "Comédia", "Ecchi", "Seinen" ] ,
-        "Imagem": "\\img\\mangas\\09.png"
+        "Imagem": "\\img\\mangas\\09.jpeg"
       },
     
       {
@@ -76,7 +76,7 @@
         "Nome": "Oyasumi Punpun",
         "Descricao": "Punpun é um menino tímido que vive em um mundo surreal, onde os personagens são representados como pássaros humanoides. Ao longo da série, acompanhamos seu crescimento desde a infância até a idade adulta, testemunhando suas lutas e frustrações. A narrativa é fragmentada e não linear, alternando entre diferentes momentos da vida de Punpun. Através de flashbacks e sonhos, mergulhamos em suas memórias e reflexões, explorando suas angústias e desejos mais profundos.",
         "Genero": [ "Romance", "Drama", "Psicológico" ] ,
-        "Imagem": "\\img\\mangas\\10.png"
+        "Imagem": "\\img\\mangas\\10.jpeg"
       },
     
       {
@@ -84,7 +84,7 @@
         "Nome": "Kingdom",
         "Descricao": "Xin Li e seu amigo de infância Piao são escravos em uma vila pobre. Ambos sonham em se tornar grandes generais e servir o Rei de Qin. Um dia, eles se envolvem em uma rebelião e Xin Li acaba chamando a atenção de Ying Zheng, o futuro Rei de Qin. Ying Zheng é um jovem ambicioso e implacável que está determinado a unificar a China sob seu domínio. Ele reconhece o potencial de Xin Li e o recruta para seu exército. Xin Li rapidamente ascende na hierarquia militar, demonstrando grande habilidade em combate e liderança. Ao longo da série, acompanhamos Xin Li em suas batalhas contra os outros reinos, testemunhando sua bravura, inteligência e ambição. A história também explora os bastidores da guerra, mostrando as intrigas políticas, as traições e os sacrifícios necessários para alcançar a vitória.",
         "Genero": [ "Seinen", "Drama", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\11.png"
+        "Imagem": "\\img\\mangas\\11.jpeg"
       },
     
       {
@@ -92,7 +92,7 @@
         "Nome": "Houseki no Kuni",
         "Descricao": "Phosphophyllite, a gema mais jovem e frágil, sonha em se tornar útil e lutar ao lado das outras Gems. Apesar de sua fragilidade, Phos é determinado a encontrar um lugar no mundo e contribuir para a defesa de sua terra natal. Ao longo da série, acompanhamos Phos em suas aventuras e descobertas. A história explora temas como identidade, perda, amizade, sacrifício e o significado da vida.",
         "Genero": [ "Fantasia", "Seinen", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\12.png"
+        "Imagem": "\\img\\mangas\\12.jpeg"
       },
     
       {
@@ -100,7 +100,7 @@
         "Nome": "20th Century Boys",
         "Descricao": "Na década de 1960, um grupo de amigos cria uma cápsula do tempo e registra seus sonhos de um futuro melhor. Eles inventam um símbolo, Friend, para representar a esperança e a união. Décadas depois, esses amigos de infância, agora adultos, percebem que eventos estranhos estão acontecendo ao redor do mundo, aparentemente baseados em seus sonhos e predições da cápsula do tempo. Um misterioso líder conhecido apenas como Amigo parece estar por trás desses eventos, e o protagonista, Kenji Endo, precisa descobrir a verdade e deter seus planos, que podem levar o mundo ao caos.",
         "Genero": [ "Psicológico", "Drama", "Seinen" ] ,
-        "Imagem": "\\img\\mangas\\13.png"
+        "Imagem": "\\img\\mangas\\13.jpeg"
       },
     
       {
@@ -108,7 +108,7 @@
         "Nome": "Real",
         "Descricao": "Nomi, um jovem com um passado misterioso, é um dos muitos lutadores que participam de Real, um torneio clandestino de boxe sem regras. Nomi busca expiação pelos seus pecados e encontrar um lugar no mundo. Ao longo da série, acompanhamos Nomi em suas lutas brutais e sangrentas. A história explora a natureza da violência, a fragilidade da vida e a busca pela redenção.",
         "Genero": [ "Seinen", "Drama", "Ação" ] ,
-        "Imagem": "\\img\\mangas\\14.png"
+        "Imagem": "\\img\\mangas\\14.jpeg"
       },
     
       {
@@ -116,7 +116,7 @@
         "Nome": "Ashita no Joe",
         "Descricao": "Joe perambula pelas ruas escuras de Tóquio, sem rumo e sem esperança. Um encontro casual com Danpei Tange, um ex-treinador de boxe aposentado, muda tudo. Danpei vê em Joe um potencial bruto e selvagem, um diamante em estado bruto que precisa ser lapidado. Apesar de sua indisciplina e rebeldia, Joe possui um talento natural para o boxe. Ele luta não apenas pela glória, mas por sobreviver em um mundo cruel e pela simples necessidade de se sentir vivo. A cada soco e cada golpe, Joe enfrenta seus demônios internos e busca um amanhã melhor.",
         "Genero": [ "Esporte", "Seinen", "Drama" ] ,
-        "Imagem": "\\img\\mangas\\15.png"
+        "Imagem": "\\img\\mangas\\15.jpeg"
       },
     
       {
@@ -124,7 +124,7 @@
         "Nome": "Kaguya-sama",
         "Descricao": "Kaguya Shinomiya e Miyuki Shirogane são os líderes do grêmio estudantil da prestigiosa Academia Shuchiin. Ambos são considerados gênios, idolatrados por todos. Porém, por trás da fachada de perfeição, guardam um segredo: estão apaixonados um pelo outro. Contudo, o orgulho impede que confessem seus sentimentos. Afinal, quem se declarar primeiro perde! É a partir desse impasse que se inicia uma divertida guerra psicológica, onde Kaguya e Miyuki elaboram planos mirabolantes e artimanhas elaboradas para fazer o outro se confessar.",
         "Genero": [ "Comédia", "Seinen", "Romance" ] ,
-        "Imagem": "\\img\\mangas\\16.png"
+        "Imagem": "\\img\\mangas\\16.jpeg"
       },
     
       {
@@ -132,7 +132,7 @@
         "Nome": "Yotsuba to!",
         "Descricao": "A família Ayase decide acolher Yotsuba, uma menina alegre e cheia de energia que morava com o seu falecido pai. Yotsuba, curiosa e ingênua por ter vivido isolada na montanha, encara o mundo urbano com olhos arregalados e uma vontade imensa de aprender e se divertir. A narrativa acompanha o dia a dia de Yotsuba e sua família adotiva, composta pelo casal Fukazawa e sua filha adolescente, Ena. Vemos Yotsuba interagindo com os vizinhos, explorando a cidade, descobrindo coisas novas e contagiando todos ao seu redor com sua alegria e entusiasmo.",
         "Genero": [ "Seinen", "Comédia", "Drama" ] ,
-        "Imagem": "\\img\\mangas\\17.png"
+        "Imagem": "\\img\\mangas\\17.jpeg"
       },
     
       {
@@ -140,7 +140,7 @@
         "Nome": "GTO",
         "Descricao": "Onizuka, aos 22 anos, não possui as qualificações tradicionais para ser um professor. Ele é imaturo, imprudente e possui um passado turbulento. No entanto, ele é apaixonado por ensinar e tem um grande desejo de fazer a diferença na vida de seus alunos. Ao longo da série, Onizuka enfrenta diversos desafios como professor, lidando com alunos problemáticos, pais exigentes e colegas de trabalho céticos. Apesar das dificuldades, ele usa sua experiência de vida e seu senso de humor peculiar para se conectar com seus alunos e ajudá-los a superar seus problemas.",
         "Genero": [ "Seinen", "Comédia", "Drama" ] ,
-        "Imagem": "\\img\\mangas\\18.png"
+        "Imagem": "\\img\\mangas\\18.jpeg"
       },
     
       {
@@ -148,7 +148,7 @@
         "Nome": "3-gatsu no Lion",
         "Descricao": "Aos 17 anos, Rei Kiriyama é um dos mais jovens jogadores profissionais de shogi do Japão. Apesar de seu talento no jogo, ele é introvertido e solitário, tendo dificuldade em se conectar com outras pessoas. Sua única família é sua avó, que o criou após a morte de seus pais. Após um período de declínio, Rei decide se mudar para Tóquio para recomeçar sua vida e carreira. Lá, ele conhece um trio de irmãs Akari, Hinata e Momo que o acolhem e o ajudam a superar seus problemas pessoais. Com o apoio delas e sua paixão pelo shogi, Rei embarca em uma jornada de autodescoberta e superação.",
         "Genero": [ "Drama", "Seinen", "Arte" ] ,
-        "Imagem": "\\img\\mangas\\19.png"
+        "Imagem": "\\img\\mangas\\19.jpeg"
       },
     
       {
@@ -156,6 +156,6 @@
         "Nome": "Koe no Katachi",
         "Descricao": "Na sexta série, o encrenqueiro Shoya Ishida inicia uma onda de bullying contra Shoko Nishimiya, uma novata com deficiência auditiva. Suas ações forçam Shoko a se transferir de escola, deixando Shoya isolado e atormentado pela culpa. Anos depois, já no ensino médio, Shoya, arrependido e buscando redenção, tenta se reconectar com Shoko e superar o peso de seu passado.",
         "Genero": [ "Drama", "Seinen", "Arte" ] ,
-        "Imagem": "\\img\\mangas\\20.png"
+        "Imagem": "\\img\\mangas\\20.jpeg"
       },
     ]

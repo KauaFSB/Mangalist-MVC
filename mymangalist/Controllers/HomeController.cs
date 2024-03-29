@@ -1,7 +1,7 @@
 using System.Diagnostics;
-using System.Linq.Expressions;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using mymangalist.Models;
 using Mymangalist.Models;
 
 namespace Mymangalist.Controllers;
@@ -23,6 +23,7 @@ public class HomeController : Controller
             string dados = leitor.ReadToEnd();
             mangas = JsonSerializer.Deserialize<List<Manga>>(dados);
         }
+        return View (mangas);
     }
 
     public IActionResult Privacy()

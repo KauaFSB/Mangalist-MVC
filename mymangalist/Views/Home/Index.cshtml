@@ -1,75 +1,57 @@
-﻿
+﻿@model List<Manga>
 @{
     ViewData["Title"] = "Home";
+    var Generos = (List<Generos>)ViewData["Generos"];
+    string Cor(string nome)
+    {
+        return Generos
+        .Where(t => t.Nome == nome)
+        .Select(t => t.Cor)
+        .FirstOrDefault();
+    }
 }
 
 <section class="pt-5 pb-3 text-center container">
     <div class="row">
         <div class="col mx-auto">
-            <h1>My Mangá List</h1>
+            <img class="flecha" src="~/img/flecha.png" alt="">
             <div class="group">
-                <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter">Ver
-                    Todos</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#aab">Aço</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#39f">Água</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#76e">Dragão</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#fc3">Elétrico</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#e9e">Fada</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#66b">Fantasma</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#f42">Fogo</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#6cf">Gelo</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#ab6">Inseto</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#b54">Lutador</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#aa9">Normal</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#ba6">Pedra</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#7c5">Planta</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#f59">Psíquico</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#754">Sombrio</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#db5">Terrestre</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#a59">Venenoso</button>
-                <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
-                    style="background-color:#89f">Voador</button>
+                <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter border"
+                    onclick="filter('all')">
+                    Ver Todos
+                </button>
+                @foreach (var Generos in Generos)
+                {
+                    <button id="btn-@Genero.Nome" class="btn btn-sm my-2 text-white btn-filter"
+                        style="background-color:@Genero.Cor" onclick="filter('@Genero.Nome')">
+                        @Genero.Nome
+                    </button>
+                }
             </div>
         </div>
     </div>
 </section>
 
-<div class="album py-5 bg-light">
+<div class="py-5 bg-dark">
     <div class="container">
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
-
-            @foreach (var manga in Model)
+            @foreach (var mangas in Model)
             {
                 <!-- Card Manga - Inicio -->
-                <div class="col">
-                    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(001)">
-                        <img src="img/pokemons/001.png" class="card-img-top" width="100%" height="300" alt="Bulbasaur" />
-                        <div class="card-body">
-                            <p class="card-text mb-0">Nº 001</p>
-                            <h3 class="card-title">Bulbasaur</h3>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5">Planta</a>
-                                    <a href="#" class="btn my-2 text-white" style="background-color:#a59">Venenoso</a>
-                                </div>
+                <div class="col" onclick="window.location = '/Home/Details/@mangas.Numero'">
+                    <div class="card shadow-sm cursor-pointer border-white @string.Join(' ', mangas.Genero) bg-dark">
+                            <img src="@mangas.Imagem" class="card-img-top" width="100%" height="300" alt="@mangas.Nome" />
+                            <div class="card-body">
+                            <p class="card-text text-white mb-0">N° @mangas.Numero.ToString("000")</p>
+                            <h3 class="card-title text-white">@mangas.Nome</h3>
+                            <div class="btn-group flex-wrap">
+                                @foreach (var Genero in mangas.Genero)
+                                {
+                                    <a href="#" class="btn my-2 text-"
+                                     style="background-color:@Cor(Genero)"
+                                     onclick="filter('@Genero')">@Genero</a>
+                                }
                             </div>
                         </div>
                     </div>
@@ -77,11 +59,10 @@
                 <!-- Card Manga - Fim -->
             }
 
-            <div id="zeroPokemon" class="col-lg-12 text-center" hidden>
-                <h1 class="my-3 text-danger">Nenhum Mangá Encontrado</h1>
+            <div id="zeroManga" class="col-lg-12 text-center">
+                <h1 class="my-3 text-danger d-none">Nenhum Mangá Encontrado</h1>
             </div>
         </div>
-
 
     </div>
 </div>

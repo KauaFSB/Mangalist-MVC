@@ -4,12 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My manga list | @ViewData["Title"]</title>
+    <title>My Manga List</title>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="~/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="~/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="~/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="~/img/favicons/favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="bg-dark">
     <header>
         <div class="collapse bg-danger" id="navbarHeader">
             <div class="container">
@@ -45,8 +42,8 @@
         <div class="navbar navbar-dark bg-danger shadow-sm">
             <div class="container">
                 <a asp-controller="Home" asp-action="Index" class="navbar-brand d-flex align-items-center">
-                    <img src="~/img/favicons/favicon-32x32.png" alt="Pokeball" class="me-2" />
-                    &nbsp;<strong>My Mangá List</strong>
+                    <img src="~/img/favicons/favicon.ico" alt="mymangalist" class="me-2" width="90" height="40"/>
+                    &nbsp;<strong>My Manga List</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,30 +54,34 @@
     </header>
 
     <main>
-            @RenderBody()
+        @RenderBody()
+        ''
     </main>
 
-    <footer class="text-muted py-3 ">
+
+    <footer class="text-muted py-3  bg-danger">
         <div class="container">
             <p class="float-end">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                        class="bi bi-arrow-up-circle-fill text-danger" viewBox="0 0 16 16">
+                        class="bi bi-arrow-up-circle-fill text-light" viewBox="0 0 16 16">
                         <path
                             d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
                     </svg>
                 </a>
             </p>
-            <p class="mb-1">My Mangá List - Versão Kauã Benedito</p>
-            <p class="mb-0">Projeto Integrador desenvolvido para as aulas de Interfaces WEB I e Sistemas Web I</p>
+            <div class="footer">
+                <p class="mb-1">My Manga List - Coded by Kauã Benedito</p>
+                <p class="mb-0">Projeto Integrador desenvolvido para as aulas de Interfaces WEB I e Sistemas Web I</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-     <script src="~/js/site.js" asp-append-version="true"></script> 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> 
 </body>
 
 </html>

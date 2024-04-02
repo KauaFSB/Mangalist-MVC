@@ -1,4 +1,3 @@
-
 namespace mymangalist.Models;
 
     public class Genero

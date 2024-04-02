@@ -1,10 +1,10 @@
 ﻿@model List<Manga>
 @{
     ViewData["Title"] = "Home";
-    var Generos = (List<Generos>)ViewData["Generos"];
+    var generos = (List<Genero>)ViewData["Generos"];
     string Cor(string nome)
     {
-        return Generos
+        return generos
         .Where(t => t.Nome == nome)
         .Select(t => t.Cor)
         .FirstOrDefault();
@@ -14,17 +14,16 @@
 <section class="pt-5 pb-3 text-center container">
     <div class="row">
         <div class="col mx-auto">
-            <img class="flecha" src="~/img/flecha.png" alt="">
             <div class="group">
                 <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter border"
                     onclick="filter('all')">
                     Ver Todos
                 </button>
-                @foreach (var Generos in Generos)
+                @foreach (var genero in generos)
                 {
-                    <button id="btn-@Genero.Nome" class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:@Genero.Cor" onclick="filter('@Genero.Nome')">
-                        @Genero.Nome
+                    <button id="btn-@genero.Nome" class="btn btn-sm my-2 text-white btn-filter"
+                        style="background-color:@genero.Cor" onclick="filter('@genero.Nome')">
+                        @genero.Nome
                     </button>
                 }
             </div>
@@ -36,21 +35,21 @@
     <div class="container">
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
-            @foreach (var mangas in Model)
+            @foreach (var manga in Model)
             {
                 <!-- Card Manga - Inicio -->
-                <div class="col" onclick="window.location = '/Home/Details/@mangas.Numero'">
-                    <div class="card shadow-sm cursor-pointer border-white @string.Join(' ', mangas.Genero) bg-dark">
-                            <img src="@mangas.Imagem" class="card-img-top" width="100%" height="300" alt="@mangas.Nome" />
+                <div class="col" onclick="window.location = '/Home/Details/@manga.Numero'">
+                    <div class="card shadow-sm cursor-pointer border-white @string.Join(' ', manga.Genero) bg-dark">
+                            <img src="@manga.Imagem" class="card-img-top" width="100%" height="300" alt="@manga.Nome" />
                             <div class="card-body">
-                            <p class="card-text text-white mb-0">N° @mangas.Numero.ToString("000")</p>
-                            <h3 class="card-title text-white">@mangas.Nome</h3>
+                            <p class="card-text text-white mb-0">N° @manga.Numero.ToString("000")</p>
+                            <h3 class="card-title text-white">@manga.Nome</h3>
                             <div class="btn-group flex-wrap">
-                                @foreach (var Genero in mangas.Genero)
+                                @foreach (var genero in manga.Genero)
                                 {
                                     <a href="#" class="btn my-2 text-"
-                                     style="background-color:@Cor(Genero)"
-                                     onclick="filter('@Genero')">@Genero</a>
+                                     style="background-color:@Cor(genero)"
+                                     onclick="filter('@genero')">@genero</a>
                                 }
                             </div>
                         </div>

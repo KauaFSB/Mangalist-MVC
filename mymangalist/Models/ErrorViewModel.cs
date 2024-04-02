@@ -1,4 +1,4 @@
-namespace Mymangalist.Models;
+namespace mymangalist.Models;
 
 public class ErrorViewModel
 {

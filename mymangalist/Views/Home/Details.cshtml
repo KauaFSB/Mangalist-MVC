@@ -46,10 +46,10 @@
                 <div class="describe">
                     <p class="fw-bold">Gêneros:</p>
                     <div class="btn-group">
-                        @foreach (var tipo in Model.Atual.Generos)
+                        @foreach (var genero in Model.Atual.Genero)
                         {
-                            <a href="#" class="btn-text" style="background-color:@Cor(tipo)">
-                                @tipo
+                            <a href="#" class="btn-text" style="background-color:@Cor(genero)">
+                                @genero
                             </a>
                         }
                     </div>

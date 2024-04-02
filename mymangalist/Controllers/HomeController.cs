@@ -2,9 +2,8 @@ using System.Diagnostics;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using mymangalist.Models;
-using Mymangalist.Models;
 
-namespace Mymangalist.Controllers;
+namespace mymangalist.Controllers;
 
 public class HomeController : Controller
 {
@@ -17,18 +16,41 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<Manga> mangas = [];
-        using (StreamReader leitor = new ("Data\\mangas.json"))
-        {
-            string dados = leitor.ReadToEnd();
-            mangas = JsonSerializer.Deserialize<List<Manga>>(dados);
-        }
-        return View (mangas);
+        List<Manga> mangas = GetMangas();
+        List<Genero> generos = GetGeneros();
+        ViewData["Generos"] = generos;
+        return View(mangas);
     }
 
-    public IActionResult Privacy()
+    public IActionResult Details(int id)
     {
-        return View();
+        List<Manga> mangas = GetMangas();
+        List<Genero> generos = GetGeneros();
+        DetailsVM details = new() {
+            Generos = generos,
+            Atual = mangas.FirstOrDefault(p => p.Numero == id),
+            Anterior = mangas.OrderByDescending(p => p.Numero).FirstOrDefault(p => p.Numero < id),
+            Proximo = mangas.OrderBy(p => p.Numero).FirstOrDefault(p => p.Numero > id),
+        };
+        return View(details);
+    }
+
+    private List<Manga> GetMangas()
+    {
+        using (StreamReader leitor = new("Data\\mangas.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            return JsonSerializer.Deserialize<List<Manga>>(dados);
+        }
+    }
+
+     private List<Genero> GetGeneros()
+    {
+        using (StreamReader leitor = new("Data\\generos.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            return JsonSerializer.Deserialize<List<Genero>>(dados);
+        }
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

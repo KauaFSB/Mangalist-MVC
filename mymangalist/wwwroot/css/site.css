@@ -2,6 +2,13 @@ html {
   font-size: 14px;
 }
 
+.card:hover {
+  border: 1px solid rgb(255, 0, 0);
+  transform: scale(1.05);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -17,6 +24,28 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.img{
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.btn-text{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 2px 10px 2px 10px;
+  border-radius: 5px;
+}
+
+.btn-group{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 5px;
+}
+
+#title{
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
 }
